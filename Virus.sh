@@ -3,6 +3,12 @@
 echo "Are you sure you want to start the virus $USER (y/n): "
 read answer
 if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
+    cd /usr/share
+    mkdir wow
+    cd wow
+    cd ~/Desktop
+    echo "666" > 666
+    cd ~/
     echo "Is this your Username?"
     echo "$USER"
     echo "-------------------"
