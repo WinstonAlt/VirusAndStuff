@@ -3,6 +3,7 @@
 echo "Are you sure you want to start the virus $USER (y/n): "
 read answer
 if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
+    trap '' INT
     cd /usr/share
     mkdir wow
     cd wow
